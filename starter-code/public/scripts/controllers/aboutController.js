@@ -5,7 +5,10 @@ var app = app || {};
   const aboutController = {};
 
   // TODO: Define a function that hides all main section elements, and then reveals just the #about section:
-
+  aboutController.init = function() {
+    console.log('home view');
+    $('#content').text('Hello from the about page');
+  }
 
   module.aboutController = aboutController;
 })(app);
